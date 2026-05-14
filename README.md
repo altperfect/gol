@@ -25,6 +25,37 @@ make build
 .\gol.exe --file .\probe.x64.o --arg DC1 --arg 88
 ```
 
+### Sample Output
+
+```powershell
+> .\gol.exe --url https://github.com/trustedsec/CS-Situational-Awareness-BOF/raw/refs/heads/master/SA/probe/probe.x64.o --arg WEB01 --arg 443
+[*] Loading object file: https://github.com/trustedsec/CS-Situational-Awareness-BOF/raw/refs/heads/master/SA/probe/probe.x64.o
+[+] Object file loaded [3857 bytes]
+WEB01:443 OPEN
+
+[+] Object file successfully executed
+```
+
+```powershell
+> .\gol.exe --url https://github.com/trustedsec/CS-Situational-Awareness-BOF/raw/refs/heads/master/SA/sha256/sha256.x64.o --arg gol
+[*] Loading object file: https://github.com/trustedsec/CS-Situational-Awareness-BOF/raw/refs/heads/master/SA/sha256/sha256.x64.o
+[+] Object file loaded [4205 bytes]
+SHA-256 Hash for gol: 51754EB20233C17BBB1966CD4F94165A1337BCA16FAFA9CA326AB553F9BBC4A7
+[+] Object file successfully executed
+```
+
+```powershell
+> .\gol.exe --url http://localhost:8822/whoami.x64.o
+[*] Loading object file: http://localhost:8822/whoami.x64.o
+[+] Object file loaded [6877 bytes]
+
+UserName                SID
+====================== ====================================
+PERFECT\alt     S-1-5-21-1653667505-1157322366-4375677965-1001
+
+<snip>
+```
+
 ## BOF Arguments
 
 Use `--arg` for ordinary arguments. Repeat it for multiple values.
