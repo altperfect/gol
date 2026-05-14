@@ -1,3 +1,3 @@
-module go-object-loader
+module gol
 
 go 1.22

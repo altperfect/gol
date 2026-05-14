@@ -15,7 +15,7 @@ import (
 	"time"
 	"unicode/utf16"
 
-	"go-object-loader/internal/bof"
+	"gol/internal/bof"
 )
 
 func main() {
